@@ -1,0 +1,108 @@
+@use 'global/variables' as v;
+@use 'global/mixins' as m;
+
+.seccion-texto {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @include m.desktop {
+        width: 100%;
+        font-size: 1.6rem;
+
+        .cuadro-seccion-primario-presentacion {
+            background-color: gainsboro;
+            margin: 15rem;
+            border-radius: 1rem;
+            width: 80rem;
+
+            .cuadro-seccion-secundario-presentacion {
+                display: flex;
+                flex-direction: column;
+                border-radius: 1rem;
+                margin: 0.5rem;
+                padding: 3rem;
+                background-color: v.$blanco;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0.05;
+                }
+
+
+                article {
+
+                    position: absolute;
+                    width: 70rem;
+                    height: auto;
+
+                    h1 {
+                        font-size: 4rem;
+                        margin-top: -1rem;
+                        padding: 1rem;
+                        text-transform: uppercase;
+                        font-family: v.$fuente_cursiva;
+                    }
+
+                    h2 {
+                        font-size: 3rem;
+                        text-transform: uppercase;
+                    }
+
+                    .articulo--presentacion {
+                        padding: 1rem;
+                        font-size: 2rem;
+                        line-height: 2.4rem;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+
+        .enlaces-presentacion {
+            display: flex;
+            background-color: gainsboro;
+            margin: 15rem;
+            margin-left: 20rem;
+            border-radius: 1rem;
+
+            .cuadro-enlaces-presentacion {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                border-radius: 1rem;
+                margin: 0.5rem;
+                padding: 1rem;
+                background-color: v.$blanco;
+
+
+                article {
+                    .lista {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        padding: 1rem;
+
+                        div{
+                            display: flex;
+                            justify-content: space-between;
+                            flex-wrap: wrap;
+                            align-items: center;
+                            margin-top: 4rem;
+                        }
+                    }
+
+                    img {
+                        
+                        width: 14rem;
+                        height: 14rem;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

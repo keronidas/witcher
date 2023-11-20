@@ -1,0 +1,46 @@
+.categoria-personaje-seleccionado {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    .contenedor-imagen-personaje {
+        margin: 2rem;
+        padding: 2rem;
+        background-color: rgba(0, 0, 0, .9);
+        border-radius: 1rem;
+
+        img{
+            width: 654px;
+            height: 727px;
+            border-radius: 1rem;
+        }
+
+    }
+
+    .informacion-personaje {
+        padding: 2rem;
+        margin: 2rem;
+        background-color: rgba(0, 0, 0, .7);
+        border-radius: 1rem;
+
+        .bg-borde-gris{
+            padding: .5rem;
+            background-color: gray;
+            border-radius: 1rem;
+        }
+        .bg-borde-blanco{
+            margin: .5rem;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 1rem;
+            h1{
+                font-size: 2.5rem;
+            }
+            p{
+                font-size: 1.6rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+@use 'global/mixins' as m;
+
+
+.barra {
+    display: flex;
+    flex-direction: column;
+
+    @include m.tablet {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+
+}

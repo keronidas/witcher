@@ -1,0 +1,52 @@
+@use 'global/variables' as v;
+@use 'global/mixins' as m;
+
+.seccion-texto {
+    display: flex;
+    justify-content: center;
+
+
+    width: 100%;
+
+
+    font-size: 1.6rem;
+
+    .cuadro-seccion-primario-enlaces {
+        background-color: gainsboro;
+        margin: 20rem;
+        border-radius: 1rem;
+ 
+
+        .cuadro-seccion-secundario-enlaces {
+            display: flex;
+            flex-direction: column;
+            border-radius: 1rem;
+            margin: 0.5rem;
+            padding: 3rem;
+            background-color: v.$blanco;
+
+            article {
+
+                h1 {
+                    font-size: 4rem;
+                    text-transform: uppercase;
+                    font-family: v.$fuente_cursiva;
+                }
+
+                h2 {
+                    font-size: 3rem;
+                    text-transform: uppercase;
+                }
+
+                span {
+                    font-family: v.$fuente_runas;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+
+
+
+
+}

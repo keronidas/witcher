@@ -1,0 +1,57 @@
+@use 'global/mixins' as m;
+@use 'global/variables' as v;
+
+.cuadro-decorativo-inicio {
+    @include m.telefono {
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 5rem;
+
+        .cuadro-palabras-decorativas{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 10rem;
+
+            @include m.telefono{
+                line-height: 0;
+            }
+        }
+
+    }
+
+    @include m.desktop {
+        display: flex;
+        margin: 10rem;
+        width: 80vh;
+        height: 60vh;
+        justify-content: center;
+
+
+        .cuadro-palabras-decorativas {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            opacity: 1;
+            width: 100%;
+            font-size: 10rem;
+            color: white;
+            margin: 1rem;
+            line-height: 2;
+
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            p {
+                margin: 1rem;
+                text-shadow: 0 0 80px rgba(255, 255, 255, .5);
+                text-transform: uppercase;
+            }
+        }
+    }
+}
