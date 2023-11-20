@@ -1,20 +1,45 @@
+@use 'global/mixins' as m;
+@use 'global/variables' as v;
+
 .categoria-personaje-seleccionado {
 
     display: flex;
+
+    @include m.telefono {
+        flex-direction: column;
+    }
+
+    @include m.desktop {
+        flex-direction: row;
+
+    }
+
     align-items: center;
     justify-content: space-between;
-
+    text-align: justify;
 
     .contenedor-imagen-personaje {
         margin: 2rem;
         padding: 2rem;
         background-color: rgba(0, 0, 0, .9);
         border-radius: 1rem;
+        width: fit-content;
 
-        img{
-            width: 654px;
-            height: 727px;
-            border-radius: 1rem;
+        img {
+
+            @include m.telefono {
+                width: 337px;
+                height: 363px;
+                border-radius: 1rem;
+            }
+
+            @include m.desktop {
+                width: 654px;
+                height: 727px;
+                border-radius: 1rem;
+            }
+
+
         }
 
     }
@@ -25,20 +50,24 @@
         background-color: rgba(0, 0, 0, .7);
         border-radius: 1rem;
 
-        .bg-borde-gris{
+        .bg-borde-gris {
             padding: .5rem;
             background-color: gray;
             border-radius: 1rem;
         }
-        .bg-borde-blanco{
+
+        .bg-borde-blanco {
             margin: .5rem;
             padding: 2rem;
             background-color: white;
             border-radius: 1rem;
-            h1{
+
+            h1 {
+                text-align: center;
                 font-size: 2.5rem;
             }
-            p{
+
+            p {
                 font-size: 1.6rem;
             }
         }

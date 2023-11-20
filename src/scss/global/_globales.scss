@@ -26,9 +26,16 @@ a {
 
 body {
 
+    @include m.telefono {
+        background-image: url(../img/cartel-movil.webp);
+        
+    }
+
     @include m.desktop {
         background-image: url(../img/portada.webp);
+        
     }
+
 
     background-attachment: fixed;
     font-family: v.$fuente_open;

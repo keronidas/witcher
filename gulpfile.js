@@ -29,7 +29,7 @@ function css(done) {
 
 function imagenes(done){
     
-    src('src/img/**/*.{png,jpg,jpeg,gif,svg}')
+    src('src/img/**/*.{png,jpg,jpeg,gif,svg,webp}')
     .pipe(imagemin({optimizationLevel: 3}))
     .pipe(dest('build/img'));
     done();

@@ -3,14 +3,24 @@
 
 .barra {
     display: flex;
-    flex-direction: column;
+
+
+    @include m.telefono {
+        flex-direction: row;
+        margin-top: -6rem;
+        align-items: center;
+        justify-content: center;
+
+
+    }
 
     @include m.tablet {
+        margin-top: 1rem;
         flex-direction: row;
         justify-content: center;
         align-items: center;
     }
 
-    
+
 
 }
