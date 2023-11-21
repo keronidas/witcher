@@ -73,3 +73,5 @@ exports.default = series(copiarJS,copiarHtml, css, imagenes, versionWebp, dev);
 //Series = ejecuta la primera tarea y luego la segunda
 
 //Parallel = ejecuta las tareas al mismo tiempo
+
+// 
