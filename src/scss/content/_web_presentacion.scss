@@ -88,8 +88,9 @@
                 article {
                     .lista {
                         display: flex;
+
                         flex-direction: column;
-                        justify-content: center;
+                        justify-content: space-between;
                         flex-wrap: wrap;
                         align-items: center;
                         margin: 2rem 10rem;
@@ -99,8 +100,9 @@
 
                         div {
                             display: flex;
-                            justify-content: space-between;
-                            flex-wrap: wrap;
+                            margin: 1rem;
+                            width: fit-content;
+                            flex-wrap: nowrap;
                             align-items: center;
                             margin-top: 4rem;
                         }
@@ -108,8 +110,8 @@
 
                     img {
 
-                        width: 14rem;
-                        height: 14rem;
+                        width: 10rem;
+                        height: 10rem;
                         opacity: 1;
                     }
                 }
@@ -223,6 +225,7 @@
                             flex-wrap: wrap;
                             align-items: center;
                             margin-top: 4rem;
+                            margin: 4rem;
                         }
                     }
 

@@ -13,7 +13,14 @@
 
     .cuadro-seccion-primario-enlaces {
         background-color: gainsboro;
-        margin: 20rem;
+        @include m.telefono {
+            margin: 5rem;
+        }
+
+        @include m.desktop {
+            margin: 20rem;
+        }
+        
         border-radius: 1rem;
  
 
@@ -41,6 +48,12 @@
                 span {
                     font-family: v.$fuente_runas;
                     font-size: 2rem;
+                }
+
+                a{
+                    font-size: 2rem;
+                    text-decoration: none;
+                    color: red;
                 }
             }
         }
