@@ -15,30 +15,30 @@ document.addEventListener('DOMContentLoaded', () => {
         texto.innerHTML = "Gerald de Rivia";
     });
     personaje1.addEventListener('click', () => {
-        window.location.href='/src/pages/gerald.html';
+        window.location.href='/build/pages/gerald.html';
     });
     personaje2.addEventListener('mouseover', () => {
         texto.innerHTML = "Ciri";
     });
     personaje2.addEventListener('click', () => {
-        window.location.href='/src/pages/ciri.html';
+        window.location.href='/build/pages/ciri.html';
     });
     personaje3.addEventListener('mouseover', () => {
         texto.innerHTML = "Yennefer";
     });
     personaje3.addEventListener('click', () => {
-        window.location.href='/src/pages/yennefer.html';
+        window.location.href='/build/pages/yennefer.html';
     });
     personaje4.addEventListener('mouseover', () => {
         texto.innerHTML = "Jaskier";
     });
     personaje4.addEventListener('click', () => {
-        window.location.href='/src/pages/jaskier.html';
+        window.location.href='/build/pages/jaskier.html';
     });
     personaje5.addEventListener('mouseover', () => {
         texto.innerHTML = "Cahir";
     });
     personaje5.addEventListener('click', () => {
-        window.location.href='/src/pages/emir.html';
+        window.location.href='/build/pages/emir.html';
     });
 });
