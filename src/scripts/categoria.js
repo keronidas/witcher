@@ -15,30 +15,30 @@ document.addEventListener('DOMContentLoaded', () => {
         texto.innerHTML = "Gerald de Rivia";
     });
     personaje1.addEventListener('click', () => {
-        window.location.href='/build/pages/gerald.html';
+        window.location.href='./gerald.html';
     });
     personaje2.addEventListener('mouseover', () => {
-        texto.innerHTML = "Ciri";
+        texto.innerHTML = "Princesa Cirilla de Cintra";
     });
     personaje2.addEventListener('click', () => {
-        window.location.href='/build/pages/ciri.html';
+        window.location.href='./ciri.html';
     });
     personaje3.addEventListener('mouseover', () => {
-        texto.innerHTML = "Yennefer";
+        texto.innerHTML = "Yennefer de Vengerberg";
     });
     personaje3.addEventListener('click', () => {
-        window.location.href='/build/pages/yennefer.html';
+        window.location.href='./yennefer.html';
     });
     personaje4.addEventListener('mouseover', () => {
-        texto.innerHTML = "Jaskier";
+        texto.innerHTML = "Jaskier de Lettenhove";
     });
     personaje4.addEventListener('click', () => {
-        window.location.href='/build/pages/jaskier.html';
+        window.location.href='./jaskier.html';
     });
     personaje5.addEventListener('mouseover', () => {
-        texto.innerHTML = "Cahir";
+        texto.innerHTML = "Emir var Emreis";
     });
     personaje5.addEventListener('click', () => {
-        window.location.href='/build/pages/emir.html';
+        window.location.href='./emir.html';
     });
 });

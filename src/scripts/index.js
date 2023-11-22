@@ -19,5 +19,5 @@ cuadroContenido.addEventListener('mouseleave', () => {
 });
 
 cuadroContenido.addEventListener('click', () => {
-    window.location.href='/src/pages/presentacion.html';
+    window.location.href='presentacion.html';
 });
