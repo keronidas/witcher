@@ -53,15 +53,11 @@ function versionWebp(done) {
         .pipe(webp())
         .pipe(dest('build/img'));
     done();
-
-
 }
-
 function dev() {
     watch('src/scss/**/*.scss', css);
     watch('src/img/**/*', imagenes);
 }
-
 exports.copiarJS = copiarJS;
 exports.copiarHtml = copiarHtml;
 exports.css = css;
@@ -73,5 +69,3 @@ exports.default = series(copiarJS,copiarHtml, css, imagenes, versionWebp, dev);
 //Series = ejecuta la primera tarea y luego la segunda
 
 //Parallel = ejecuta las tareas al mismo tiempo
-
-// 
