@@ -1,9 +1,9 @@
 # Proyecto WebPage the Witcher
 
 ************************************
-********** Disponible en ***********
+Disponible en  https://the-witcher-page.netlify.app/
 ************************************
-https://the-witcher-page.netlify.app/
+
 
 ## Datos relevantes del proyecto
 
