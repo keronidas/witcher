@@ -1,7 +1,44 @@
 @use 'global/mixins' as m;
 @use 'global/variables' as v;
 
+@include m.desktop{
+    .contenido-principal {
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.contenedor-imagen-recortada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        margin-top: 10rem;
+        margin-left: -40rem;
+        clip-path: circle(30% at 70% 50%);
+
+        @include m.telefono{
+            margin-left: -20rem;
+            width: 80%;
+            height: 80%;
+        }
+     
+        @include m.desktop{
+            width: 100%;
+            height: 100%;
+        }
+
+        
+    }
+
+}
+
 .cuadro-decorativo-inicio {
+
     @include m.telefono {
         color: white;
         display: grid;
@@ -28,7 +65,7 @@
                 line-height: 0;
 
                 p {
-                    padding-top: 10rem;
+                    padding-top: 5rem;
                     margin-top: -1rem;
                 }
             }
@@ -37,10 +74,9 @@
     }
 
     @include m.desktop {
-        display: flex;
-        margin: 10rem;
-        width: 80vh;
-        height: 60vh;
+
+        margin: 0rem;
+
         justify-content: center;
 
 
@@ -72,3 +108,19 @@
         }
     }
 }
+#cuadro-contenido{
+  
+    border-radius: 10px;
+    transition: background-color 0.3s ease; /* Añade transición para el cambio de color de fondo */
+
+}
+#cuadro-contenido:hover {
+    background-color: rgba($color: #000000, $alpha: 0.25);
+    border-radius: 10px;
+}
+
+.initial {
+    transform: translateY(0); /* Posición inicial sin desplazamiento */
+    transition: transform 0.3s ease; /* Transición suave para el desplazamiento */
+}
+

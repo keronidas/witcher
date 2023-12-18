@@ -20,7 +20,21 @@
         justify-content: center;
         align-items: center;
     }
+    @include m.desktop {
+        margin-top: 0rem;
+    }
 
 
+    .contenedor-imagen-logo {
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
+        img {
+            width: 100px;
+            height: 80px;
+        }
+    }
 }

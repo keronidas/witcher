@@ -1,6 +1,59 @@
 @use 'global/variables' as v;
 @use 'global/mixins' as m;
 
+@keyframes moveGroups {
+
+
+    100% {
+        transform: unset;
+    }
+}
+
+.contenedor-svg {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#Vector,
+#Vector_5,
+
+#Vector_12 {
+    transform: translate(56%, 36%);
+    animation: moveGroups 2s ease-in-out 1s forwards;
+}
+
+#Vector_2,
+#Vector_6,
+#Vector_10 {
+    transform: translate(52%);
+    animation: moveGroups 2s ease-in 1s forwards;
+}
+
+#Vector_4,
+#Vector_9 {
+    transform: translate(41%);
+    animation: moveGroups 2s ease-in-out 1s forwards;
+}
+
+#Vector_7,
+#Vector_3 {
+    transform: translate(86%, 96%);
+    animation: moveGroups 2s ease-in-out 1s forwards;
+}
+
+#Vector_8,
+#Vector_11 {
+    transform: translate(37%);
+    animation: moveGroups 2s ease-in-out 1s forwards;
+}
+
+
+
+
+
+
 .seccion-texto {
     display: flex;
     justify-content: center;

@@ -5,19 +5,24 @@
 .nav-principal {
     display: flex;
     flex-direction: column;
-   
+    align-items: center;
+
 
     @include m.telefono {
         margin-top: 3rem;
         margin-bottom: -2rem;
-    
+
     }
 
     @include m.tablet {
         flex-direction: row;
         gap: math.div(v.$separacion, 4);
         margin-top: 0;
-    margin-bottom: 2rem;   }
+        margin-bottom: 2rem;
+    }
+    @include m.desktop {
+        margin-bottom: 0;
+    }
 
     a {
         text-align: center;

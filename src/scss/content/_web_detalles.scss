@@ -70,11 +70,32 @@
             p {
                 font-size: 1.6rem;
             }
-            a{
+
+            a {
                 font-size: 1.6rem;
                 text-decoration: none;
                 color: red;
             }
+        }
+    }
+}
+
+.imagenes-extra {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+    .contenedor-imagenes-extra {
+        margin: 2rem;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .contenido-contenedor-imagenes {
+            background-color: rgba(0, 0, 0, .7);
+            border-radius: 1rem;
+            border: solid 1px gray;
         }
     }
 }

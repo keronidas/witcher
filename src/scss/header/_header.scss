@@ -1,0 +1,99 @@
+@use 'global/variables' as v;
+@use 'global/mixins' as m;
+
+.header {
+
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: auto;
+    width: 100%;
+
+
+    // @include m.tablet {
+    //     min-height: 70rem;
+    // }
+
+    @include m.telefono {
+        padding: 4rem;
+    }
+
+    @include m.tablet {
+        padding: 3rem;
+    }
+    @include m.desktop {
+        padding: 0rem;
+    }
+
+
+
+    &::before {
+        content: "";
+        background-color: v.$negro;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: .4;
+        height: auto;
+        width: auto;
+
+    }
+
+    .contenido-header {
+
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        text-align: center;
+
+        h1 {
+            text-align: center;
+            color: v.$blanco;
+            text-transform: uppercase;
+
+            @include m.tablet {
+                margin-top: 10rem;
+            }
+        }
+
+        .contenedor-imagen-logo {
+            width: auto;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        .txt {
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            h1 {
+                color: v.$blanco;
+                text-transform: uppercase;
+                font-size: 2rem;
+                font-weight: 700;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+
+
+
+
+}

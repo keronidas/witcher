@@ -1,3 +1,4 @@
+
 const textoCambiante1 = document.getElementById('texto-cambiante1');
 const textoCambiante2 = document.getElementById('texto-cambiante2');
 const textoCambiante3 = document.getElementById('texto-cambiante3');
@@ -9,6 +10,7 @@ cuadroContenido.addEventListener('mouseover', () => {
     textoCambiante1.innerHTML = 'The Witcher';
     textoCambiante2.innerHTML = 'La';
     textoCambiante3.innerHTML = ' Serie';
+
 
 });
 

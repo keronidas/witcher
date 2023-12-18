@@ -38,6 +38,11 @@ function copiarJS(done) {
         .pipe(dest('build/js'));
     done();
 }
+function copiarAudio(done){
+    src('src/audio/**/*.{mp3,wav}')
+        .pipe(dest('build/audio'));
+    done();
+}
 
 
 function imagenes(done) {
@@ -62,9 +67,10 @@ exports.copiarJS = copiarJS;
 exports.copiarHtml = copiarHtml;
 exports.css = css;
 exports.dev = dev;
+exports.copiarAudio = copiarAudio;
 exports.versionWebp = versionWebp;
 exports.imagenes = imagenes;
-exports.default = series(copiarJS,copiarHtml, css, imagenes, versionWebp, dev);
+exports.default = series(copiarJS,copiarHtml,copiarAudio, css, imagenes, versionWebp, dev);
 
 //Series = ejecuta la primera tarea y luego la segunda
 
