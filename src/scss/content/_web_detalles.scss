@@ -88,14 +88,59 @@
 
     .contenedor-imagenes-extra {
         margin: 2rem;
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem;
+        display: flex;
+        justify-content: space-around;
+
+        @include m.telefono {
+            flex-direction: column;
+        }
+
+        @include m.desktop {
+            flex-direction: row;
+        }
+
+
+
 
         .contenido-contenedor-imagenes {
-            background-color: rgba(0, 0, 0, .7);
+            padding: 2rem;
+            height: auto;
+            width: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: rgba(0, 0, 0, .9);
             border-radius: 1rem;
-            border: solid 1px gray;
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            a {
+                color: red;
+                font-style: none;
+            }
+            .contenido-img-cont{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            table {
+                padding: 2rem;
+                font-size: 2rem;
+
+                thead {
+                    background-color: rgba(0, 0, 0, .7);
+                    color: white;}
+
+                td {
+                    padding: 1rem;
+                }
+            }
         }
+
     }
 }
