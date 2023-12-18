@@ -14,6 +14,7 @@ Disponible en  https://the-witcher-page.netlify.app/
 ## Pasos del proyecto
 
 - Instalar node_modules ---> `npm i`
+- Instalar gulp de manera global `npm i -g gulp`
 - Crear la carpeta de desarrollo, para ello ejecutaremos `gulp` y tendremos la carpeta build lista para trabajar en ella
 - Usar el comando `npm run build` para obtener la carpeta de produccion
 
